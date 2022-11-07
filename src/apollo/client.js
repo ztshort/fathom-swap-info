@@ -12,7 +12,7 @@ export const client = new ApolloClient({
 
 export const healthClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'http://graph.composer.live:8030/graphql',
+    uri: 'https://graph.composer.live/graphql',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
